@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>BIODATA SISWA</title>
+</head>
+<body>
+  
+  <form>
+        <fieldset>
+        <legend>REGISTRASI</legend>
+  
+  <form>
+    <p>
+      Nama : <input type="text"name="value">
+    </p>
+    
+    <p>
+      Username : <input type="text"name="value"> 
+    </p>
+    
+    <p>
+      Email : <input type="text"name="value"> 
+    </p>
+    
+    <p>
+      Password : <input type="text"name="value"> 
+    </p>
+    
+    
+    <radio>
+    jenis kelamin :  <input type="radio"value="laki-laki">laki-laki
+    </radio>
+    
+     <radio>
+     <input type="radio"value="perempuan">perempuan
+    </radio>
+   
+   <p>
+            <label for="agama">Agama: </label>
+            <?php $agama = $siswa['agama']; ?>
+            <select name="agama">
+                <option <?php echo ($agama == 'Islam') ? "selected": "" ?>Islam</option>
+                <option <?php echo ($agama == 'Kristen') ? "selected": "" ?>Kristen</option>
+                <option <?php echo ($agama == 'Hindu') ? "selected": "" ?>Hindu</option>
+                <option <?php echo ($agama == 'Budha') ? "selected": "" ?>Budha</option>
+                <option <?php echo ($agama == 'Atheis') ? "selected": "" ?>Atheis</option>
+            </select>
+        </p>
+   
+   <p>
+     Biografi:<textarea name="alamat"
+. id="alamat" cols="40" rows="3"></textarea>
+  </p>
+  
+  <input type="submit" name="submit" value="daftar">
+  
+  
+   
+  </form>
+</body>
+</html>
